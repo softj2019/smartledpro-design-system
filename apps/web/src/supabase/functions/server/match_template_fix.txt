@@ -1,0 +1,19 @@
+This file contains the fixed match template generation code.
+
+Lines 3078-3090 should be:
+        return `
+          <div style="margin-bottom: 20px; padding: 15px;">
+            <div style="font-size: 28px; font-weight: bold; color: #ffcc00; margin-bottom: 8px;">
+              ${match.stadium}
+            </div>
+            <div style="font-size: 24px; color: #ffffff;">
+              ${clubName}
+            </div>
+            <div style="font-size: 20px; color: #aaaaaa; margin-top: 8px;">
+              ${startTime.getHours()}:${String(startTime.getMinutes()).padStart(2, '0')} ~ ${endTime.getHours()}:${String(endTime.getMinutes()).padStart(2, '0')}
+            </div>
+          </div>
+        `;
+
+Line 3105 should be:
+          backgroundColor: '#000000',

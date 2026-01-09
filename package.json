@@ -1,0 +1,14 @@
+{
+  "name": "smartledpro-monorepo",
+  "private": false,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace apps/web run dev",
+    "build": "npm -ws run build",
+    "typecheck": "npm -ws run typecheck"
+  }
+}
